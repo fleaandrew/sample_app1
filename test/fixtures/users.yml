@@ -13,3 +13,26 @@ clark:
   name: Clark Kent
   email: super@ukr.net
   password_digest: <%= User.digest('password') %>
+  admin: true
+
+bruce:
+  name: Bruce Wayne
+  email: rich@ukr.net
+  password_digest: <%= User.digest('password') %>
+
+barry:
+  name: Barry Allen
+  email: fast@ukr.net
+  password_digest: <%= User.digest('password') %>
+
+hal:
+  name: Hal Jordan
+  email: green@ukr.net
+  password_digest: <%= User.digest('password') %>
+
+<% 30.times do |n| %>
+justice_worker_<%= n %>:
+  name: <%= "Justice Worker #{n}" %>
+  email: <%= "jl#{n}@ukr.net" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>

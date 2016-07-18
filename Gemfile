@@ -7,6 +7,9 @@ gem 'rails', '~> 5.0.0'
 gem 'bootstrap-sass'
 # Adding bcrypt
 gem 'bcrypt'
+# Adding pagination
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 # Use sqlite3 as the database for Active Record
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
@@ -46,6 +49,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Adding 'Faker' to make sample users
+  gem 'faker'
 end
 
 group :test do
