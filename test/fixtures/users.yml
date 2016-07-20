@@ -14,25 +14,35 @@ clark:
   email: super@ukr.net
   password_digest: <%= User.digest('password') %>
   admin: true
+  activated: true
+  activated_at: <%= Time.zone.now %>
 
 bruce:
   name: Bruce Wayne
   email: rich@ukr.net
   password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
 
 barry:
   name: Barry Allen
   email: fast@ukr.net
   password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
 
 hal:
   name: Hal Jordan
   email: green@ukr.net
   password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
 
 <% 30.times do |n| %>
 justice_worker_<%= n %>:
   name: <%= "Justice Worker #{n}" %>
   email: <%= "jl#{n}@ukr.net" %>
   password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
 <% end %>
